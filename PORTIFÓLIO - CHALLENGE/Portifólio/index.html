@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brenno Eduardo — Desenvolvedor Frontend em Formação</title>
+  <meta name="description" content="Portfólio de Brenno Eduardo Modesto Silva, estudante de Técnico em Informática no Senac Nações Unidas e desenvolvedor Frontend em formação.">
+  <meta name="theme-color" content="#0a0a0f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='%230a0a0f'%3EBM%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-theme="dark">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top site-nav" id="navbar" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand brand" href="#inicio" aria-label="Brenno Eduardo — início">
+          <span class="brand-mark">BM</span><span class="brand-text">Brenno Eduardo</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+          <span class="burger" aria-hidden="true"><i></i><i></i><i></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="#inicio" data-section="inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre" data-section="sobre">Sobre</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-group="conhecimento">Conhecimento</a>
+              <ul class="dropdown-menu dropdown-menu-dark glass-menu">
+                <li><a class="dropdown-item" href="#humanas" data-section="humanas">Ciências Humanas</a></li>
+                <li><a class="dropdown-item" href="#natureza" data-section="natureza">Ciências da Natureza</a></li>
+                <li><a class="dropdown-item" href="#matematica" data-section="matematica">Matemática</a></li>
+                <li><a class="dropdown-item" href="#linguagens" data-section="linguagens">Linguagens</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-group="tendencias">Tendências</a>
+              <ul class="dropdown-menu dropdown-menu-dark glass-menu">
+                <li><a class="dropdown-item" href="#ciberseguranca" data-section="ciberseguranca">Cibersegurança</a></li>
+                <li><a class="dropdown-item" href="#blockchain" data-section="blockchain">Blockchain</a></li>
+                <li><a class="dropdown-item" href="#automacao" data-section="automacao">Automação e Robótica</a></li>
+                <li><a class="dropdown-item" href="#edge" data-section="edge">Edge Computing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#projetos" data-section="projetos">Projetos</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-glow btn-sm" href="#contato" data-section="contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7 order-2 order-lg-1">
+            <p class="eyebrow reveal"><span class="pulse-dot"></span> Disponível para novos projetos</p>
+            <h1 class="hero-title reveal" style="--d:.08s">Brenno Eduardo<br><span class="grad-text">Modesto Silva</span></h1>
+            <p class="hero-role reveal" style="--d:.12s">Desenvolvedor Frontend em Formação</p>
+            <p class="hero-sub reveal" style="--d:.16s">Estudante de Técnico em Informática no <strong>Senac Nações Unidas</strong>, atuando no <strong>front-end e no back-end</strong> e em busca da primeira oportunidade na área de tecnologia.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4 reveal" style="--d:.24s">
+              <a href="#projetos" class="btn btn-glow btn-lg">Ver Projetos <span data-icon="arrow"></span></a>
+              <a href="#contato" class="btn btn-ghost btn-lg">Entrar em Contato</a>
+            </div>
+            <ul class="hero-contact reveal" style="--d:.32s" aria-label="Informações de contato">
+              <li><span data-icon="pin"></span> São Paulo, SP</li>
+              <li><span data-icon="mail"></span> <a href="mailto:brennoeduardomodestosilva@gmail.com">brennoeduardomodestosilva@gmail.com</a></li>
+              <li><span data-icon="phone"></span> <a href="tel:+5511961013689">+55 11 96101-3689</a></li>
+              <li><span data-icon="home"></span> Av. Miguel Yunes, 1030</li>
+            </ul>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2">
+            <div class="avatar-wrap reveal" style="--d:.1s">
+              <div class="avatar-ring"></div>
+              <img id="avatar" class="avatar" width="420" height="420" alt="Foto de Brenno Eduardo Modesto Silva" src="https://i.imgur.com/T9mKCVv.png">
+              <span class="chip chip-a"><span data-icon="code"></span> Front-end</span>
+              <span class="chip chip-b"><span data-icon="server"></span> Back-end</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#sobre" class="scroll-cue" aria-label="Rolar para a próxima seção"><span></span></a>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">01 — Apresentação</p>
+          <h2>Sobre mim</h2>
+        </header>
+        <div class="row g-4">
+          <div class="col-lg-6 reveal">
+            <article class="card-glass h-100 tilt">
+              <h3 class="h5">Perfil profissional</h3>
+              <p>Estudante de Técnico em Informática no Senac Nações Unidas, com formação completa ao longo dos três anos do curso em Hardware e Software, Redes de Computadores e Programação. Atuo tanto no front-end quanto no back-end, apaixonado por construir interfaces funcionais e sistemas bem estruturados. Busco minha primeira oportunidade profissional na área de tecnologia.</p>
+              <ul class="meta-list">
+                <li><span data-icon="cap"></span> Técnico em Informática — Senac Nações Unidas</li>
+                <li><span data-icon="pin"></span> São Paulo, SP</li>
+                <li><span data-icon="mail"></span> <a href="mailto:brennoeduardomodestosilva@gmail.com">brennoeduardomodestosilva@gmail.com</a></li>
+                <li><span data-icon="phone"></span> <a href="tel:+5511961013689">+55 11 96101-3689</a></li>
+                <li><span data-icon="home"></span> Av. Miguel Yunes, 1030</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-lg-6 reveal" style="--d:.08s">
+            <article class="card-glass h-100 tilt">
+              <h3 class="h5 mb-4">Trajetória acadêmica</h3>
+              <ol class="timeline">
+                <li><span class="tl-year">1º ano</span><div><h4>Hardware e Software</h4><p>Arquitetura de computadores, montagem e manutenção, sistemas operacionais e instalação de softwares.</p></div></li>
+                <li><span class="tl-year">2º ano</span><div><h4>Redes de Computadores</h4><p>Modelos OSI e TCP/IP, endereçamento IP, switches, roteadores e configuração de redes locais.</p></div></li>
+                <li><span class="tl-year">3º ano</span><div><h4>Programação (Front-end e Back-end)</h4><p>HTML5, CSS3, JavaScript e Bootstrap no front-end; PHP e MySQL no back-end, com versionamento em Git.</p></div></li>
+              </ol>
+            </article>
+          </div>
+          <div class="col-12 reveal">
+            <article class="card-glass tilt">
+              <h3 class="h5 mb-3">Hard skills</h3>
+              <ul class="badges" aria-label="Habilidades técnicas">
+                <li><span data-icon="cpu"></span>Hardware e Software</li>
+                <li><span data-icon="network"></span>Redes de Computadores</li>
+                <li><span data-icon="code"></span>Programação Front-end (HTML5, CSS3, JavaScript, Bootstrap)</li>
+                <li><span data-icon="server"></span>Programação Back-end (PHP, MySQL)</li>
+                <li><span data-icon="git"></span>Git e GitHub</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-12 reveal">
+            <h3 class="h5 mb-3 mt-3">Soft skills</h3>
+            <ul class="soft-grid" aria-label="Habilidades comportamentais">
+              <li class="card-glass"><span class="soft-ico" data-icon="chat"></span><h4>Comunicação</h4></li>
+              <li class="card-glass"><span class="soft-ico" data-icon="team"></span><h4>Trabalho em equipe</h4></li>
+              <li class="card-glass"><span class="soft-ico" data-icon="bolt"></span><h4>Proatividade</h4></li>
+              <li class="card-glass"><span class="soft-ico" data-icon="layout"></span><h4>Organização</h4></li>
+              <li class="card-glass"><span class="soft-ico" data-icon="puzzle"></span><h4>Resolução de problemas</h4></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÁREAS DO CONHECIMENTO -->
+    <div class="group-title container reveal">
+      <p class="kicker">02 — Formação</p>
+      <h2>Áreas do conhecimento</h2>
+      <p class="lead-muted">Como cada área do Ensino Médio moldou meu raciocínio como programador.</p>
+    </div>
+
+    <section id="humanas" class="section section-alt">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-4 reveal"><span class="big-num" aria-hidden="true">01</span><h3 class="h2">Ciências Humanas</h3><p class="tag-line">Epistemicídio · Filósofos atuais · Ditadura</p></div>
+          <div class="col-lg-8 prose reveal" style="--d:.08s">
+            <p>Em Ciências Humanas estudei o <em>epistemicídio</em>: o apagamento sistemático de saberes de povos colonizados, tratados como inferiores ao conhecimento europeu. Isso me ensinou a perguntar quem decide o que conta como conhecimento válido. Na tecnologia a pergunta se repete: bases de dados, interfaces e algoritmos refletem as escolhas de quem os projeta, e quando só uma visão de mundo é considerada, outras pessoas ficam de fora. Hoje penso nisso ao projetar formulários, textos e fluxos que não pressuponham um único perfil de usuário.</p>
+            <p>O contato com filósofos atuais desenvolveu meu pensamento crítico. Aprendi a questionar premissas, comparar argumentos e identificar falácias antes de aceitar uma conclusão. Na programação o exercício é o mesmo ao depurar: não confio na primeira explicação, levanto hipóteses, testo e descarto as que não se sustentam. Os debates sobre tecnologia, vigilância e inteligência artificial também me mostraram que escrever código envolve responsabilidade ética, como o tratamento de dados pessoais e a transparência sobre o que o sistema faz.</p>
+            <p>O estudo da ditadura mostrou como a censura, o controle da informação e a vigilância atuam sobre a sociedade. Ao ver o papel dos registros e da memória na defesa de direitos, passei a valorar a privacidade, a segurança da informação e a LGPD. Um sistema que armazena dados, como o cadastro de clientes que desenvolvi em PHP e MySQL, precisa proteger quem está por trás de cada registro.</p>
+            <p>Essas disciplinas me levam a analisar o contexto social dos usuários e os impactos de uma solução antes de construí-la: quem será beneficiado, quem pode ser excluído e que riscos existem. Para mim, programar bem inclui compreender a sociedade para a qual se programa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="natureza" class="section">
+      <div class="container">
+        <div class="row g-5 align-items-start flex-lg-row-reverse">
+          <div class="col-lg-4 reveal"><span class="big-num" aria-hidden="true">02</span><h3 class="h2">Ciências da Natureza</h3><p class="tag-line">Energia elétrica · Cadeia alimentar · Tabela periódica</p></div>
+          <div class="col-lg-8 prose reveal" style="--d:.08s">
+            <p>Em energia elétrica estudei tensão, corrente, resistência e circuitos. Esse conteúdo é a base física de tudo que aprendi em Hardware: fontes, placas-mãe, consumo de componentes e a sinalização por pulsos elétricos que representa os bits. Entender que cada operação de um computador depende de sinais elétricos me deu uma visão concreta do que acontece por baixo do código, e a lógica de ligado e desligado conecta diretamente a eletricidade ao raciocínio booleano.</p>
+            <p>A cadeia alimentar me ensinou a pensar em sistemas com dependências. Se um elo é removido, toda a cadeia sofre os efeitos. Em um sistema de software é igual: front-end, API, banco de dados e rede dependem uns dos outros, e uma falha no servidor MySQL derruba a tela que o usuário vê. Esse raciocínio me ajuda a estruturar projetos em camadas com responsabilidades bem definidas e a prever onde as falhas podem se propagar.</p>
+            <p>A tabela periódica trabalha com classificação e padrões. Os elementos são organizados por propriedades, e a posição de cada um permite prever seu comportamento. Isso se parece com a organização de dados em tabelas, a escolha de tipos no banco e a padronização de nomes e pastas em um projeto. Classificar bem facilita encontrar, reaproveitar e manter.</p>
+            <p>Por fim, o método científico — observar, levantar hipótese, experimentar, analisar e concluir — é o meu roteiro de debugging. Quando um script não funciona, reproduzo o erro, isolo variáveis, altero uma coisa por vez e registro o resultado. Experimentar com método, em vez de tentar mudanças aleatórias, me deixa mais rápido e seguro para resolver problemas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="matematica" class="section section-alt">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-4 reveal"><span class="big-num" aria-hidden="true">03</span><h3 class="h2">Matemática</h3><p class="tag-line">Logaritmos · Probabilidade · Números binários</p></div>
+          <div class="col-lg-8 prose reveal" style="--d:.08s">
+            <p>Os números binários são a ponte mais direta entre Matemática e computação. Aprendi a converter entre binário, decimal e hexadecimal e vi que tudo o que um computador processa — texto, imagem, cores, endereços IP — se reduz a sequências de 0 e 1. Essa base apareceu de novo em Redes, quando calculei máscaras de sub-rede e endereços de hosts, e na programação, ao entender operadores lógicos e tipos de dados.</p>
+            <p>Os logaritmos me deram noção de crescimento e de eficiência. Como o logaritmo é a operação inversa da exponencial, ele explica por que a busca binária encontra um item em uma lista de mil elementos com cerca de dez comparações, enquanto a busca sequencial pode precisar de mil. Também aparece no cálculo de quantos bits são necessários para representar uma quantidade de valores. Pensar assim me ajuda a avaliar a complexidade dos algoritmos que escrevo.</p>
+            <p>A probabilidade e a estatística me ensinaram a lidar com incerteza. Em jogos, por exemplo, uso <em>Math.random()</em> para sortear posições, como no Jogo da Memória, e preciso garantir uma distribuição justa ao embaralhar as cartas. Em sistemas reais, probabilidade e médias sustentam métricas de desempenho, detecção de falhas e análise de dados de uso.</p>
+            <p>Em conjunto, essas áreas formam a minha lógica de programação: decompor um problema, representar os dados, escolher uma estratégia eficiente e verificar o resultado com exemplos. Para mim, algoritmo é Matemática aplicada com sintaxe de linguagem.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="linguagens" class="section">
+      <div class="container">
+        <div class="row g-5 align-items-start flex-lg-row-reverse">
+          <div class="col-lg-4 reveal"><span class="big-num" aria-hidden="true">04</span><h3 class="h2">Linguagens</h3><p class="tag-line">Escolas literárias · Movimentos artísticos · Entrevista profissional em inglês</p></div>
+          <div class="col-lg-8 prose reveal" style="--d:.08s">
+            <p>O estudo das escolas literárias e dos movimentos artísticos mostrou como cada época cria seus próprios códigos de expressão, e como estilo e contexto comunicam ideias. Isso influencia o meu olhar para o design: composição, contraste, ritmo e hierarquia visual vêm do repertório que aprendi com a arte, e ajudam a decidir como organizar uma página para guiar a atenção do usuário. Reconhecer a evolução de um movimento para o outro também me lembra que interfaces mudam e que é preciso se atualizar sempre.</p>
+            <p>As escolas literárias também treinaram a minha expressão escrita. Escrever bem é um requisito para nomear variáveis e funções com clareza, redigir mensagens de commit objetivas e documentar o código para que outra pessoa o entenda. Um bom README, como o deste projeto, é uma forma de comunicação técnica, e a clareza do texto pesa tanto quanto a do código.</p>
+            <p>Na parte de inglês, preparei uma entrevista profissional: aprendi a me apresentar, falar da formação, das habilidades e dos objetivos, e a responder perguntas comuns de seleção. Essa prática me ajuda na leitura de documentações técnicas, que estão quase sempre em inglês — MDN, documentação do PHP, do MySQL e do Bootstrap — e na participação em comunidades de desenvolvedores.</p>
+            <p>Linguagens, enfim, é sobre se comunicar com precisão com pessoas e com máquinas. Em ambos os casos, a sintaxe correta e a intenção clara fazem a mensagem chegar como foi pensada.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TENDÊNCIAS -->
+    <div class="group-title container reveal">
+      <p class="kicker">03 — Tendências</p>
+      <h2>Tendências tecnológicas</h2>
+      <p class="lead-muted">Quatro frentes que estão redesenhando o mercado de software.</p>
+    </div>
+
+    <section id="ciberseguranca" class="section section-alt">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-4 reveal"><div class="icon-tile"><span data-icon="shield"></span></div><h3 class="h2">Cibersegurança</h3><p class="tag-line">Proteção de dados, sistemas e pessoas</p></div>
+          <div class="col-lg-8 prose reveal" style="--d:.08s">
+            <p>Cibersegurança é o conjunto de práticas, processos e tecnologias que protege sistemas, redes e dados contra acessos não autorizados, alterações e indisponibilidade. Seu alicerce é a tríade CIA: confidencialidade, integridade e disponibilidade. Com a digitalização de serviços essenciais, ataques como ransomware, phishing e negação de serviço passaram a causar prejuízos financeiros e reputacionais enormes.</p>
+            <p>Para quem desenvolve frontend, a segurança começa no código. Vulnerabilidades como XSS, CSRF e injeção de conteúdo estão no OWASP Top 10 e exigem sanitização de entradas, escape de saídas, uso de Content Security Policy e cookies com flags <em>HttpOnly</em> e <em>SameSite</em>. Nunca se deve confiar apenas na validação do navegador, pois ela melhora a experiência, mas não substitui a validação no servidor.</p>
+            <p>As tendências incluem a arquitetura Zero Trust, que parte do princípio de que nenhuma requisição é confiável por padrão, autenticação multifator e passkeys, além do uso de inteligência artificial para detectar anomalias. Soma-se a isso a conformidade com leis de privacidade, como a LGPD, que torna a proteção de dados pessoais uma obrigação legal e um diferencial competitivo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blockchain" class="section">
+      <div class="container">
+        <div class="row g-5 align-items-start flex-lg-row-reverse">
+          <div class="col-lg-4 reveal"><div class="icon-tile"><span data-icon="chain"></span></div><h3 class="h2">Blockchain</h3><p class="tag-line">Registros distribuídos e imutáveis</p></div>
+          <div class="col-lg-8 prose reveal" style="--d:.08s">
+            <p>Blockchain é um livro-razão distribuído no qual transações são agrupadas em blocos encadeados por funções de hash criptográficas. Como cada bloco referencia o hash do anterior, alterar um registro passado exigiria refazer toda a cadeia, o que torna o histórico praticamente imutável. A rede é mantida por nós independentes que chegam a um acordo por meio de mecanismos de consenso, como Proof of Work e Proof of Stake.</p>
+            <p>Além das criptomoedas, a tecnologia viabiliza contratos inteligentes: programas que executam regras automaticamente quando condições predefinidas são atendidas, sem intermediários. Isso abre espaço para aplicações descentralizadas (dApps), rastreabilidade de cadeias de suprimentos, certificação de diplomas, registro de propriedade e finanças descentralizadas. Do lado do frontend, bibliotecas como ethers.js conectam interfaces a carteiras digitais.</p>
+            <p>Os desafios envolvem escalabilidade, consumo energético e regulação. Soluções de camada 2, rollups e a migração para Proof of Stake respondem a parte deles. Na prática, blockchain não substitui bancos de dados convencionais: faz sentido quando é preciso confiança entre partes que não confiam entre si, auditabilidade e resistência à censura.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="automacao" class="section section-alt">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-4 reveal"><div class="icon-tile"><span data-icon="robot"></span></div><h3 class="h2">Automação e Robótica</h3><p class="tag-line">Processos que se executam sozinhos</p></div>
+          <div class="col-lg-8 prose reveal" style="--d:.08s">
+            <p>Automação é o uso de tecnologia para executar tarefas com mínima intervenção humana, enquanto a robótica integra mecânica, eletrônica e software para criar máquinas que percebem e atuam sobre o ambiente. Na indústria, braços robóticos e linhas automatizadas ganham precisão e escala; nos escritórios, a automação de processos (RPA) elimina atividades repetitivas como lançamento de dados e conciliações.</p>
+            <p>No universo web, a automação está em pipelines de CI/CD, testes automatizados, webhooks e plataformas como Zapier, Make e Formspree, que conectam serviços por meio de APIs. Este próprio portfólio usa essa ideia: ao enviar o formulário, uma requisição HTTP dispara a notificação por e-mail sem qualquer servidor próprio. Robótica, por sua vez, combina sensores, atuadores e microcontroladores como Arduino e Raspberry Pi.</p>
+            <p>A tendência é a convergência com inteligência artificial e IoT, gerando robôs colaborativos (cobots), veículos autônomos, drones e agentes de software capazes de tomar decisões. Isso redefine profissões, exigindo requalificação, e levanta debates éticos sobre responsabilidade e segurança. Para o desenvolvedor, automatizar o que é repetitivo libera tempo para o que exige criatividade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="edge" class="section">
+      <div class="container">
+        <div class="row g-5 align-items-start flex-lg-row-reverse">
+          <div class="col-lg-4 reveal"><div class="icon-tile"><span data-icon="edge"></span></div><h3 class="h2">Edge Computing</h3><p class="tag-line">Processamento perto de quem gera os dados</p></div>
+          <div class="col-lg-8 prose reveal" style="--d:.08s">
+            <p>Edge Computing é o paradigma que move processamento e armazenamento para perto da origem dos dados — dispositivos, gateways ou data centers regionais — em vez de enviá-los a uma nuvem centralizada. O principal ganho é a redução de latência: aplicações como veículos autônomos, cirurgia assistida e realidade aumentada não podem esperar um ciclo completo de ida e volta até um servidor distante.</p>
+            <p>Outros benefícios são a economia de largura de banda, já que apenas dados relevantes são enviados à nuvem, a resiliência em locais com conexão intermitente e a privacidade, pois informações sensíveis podem ser processadas localmente. Na web, o conceito aparece em CDNs, em funções serverless na borda, como Cloudflare Workers e Vercel Edge Functions, e em Service Workers que executam lógica no próprio navegador.</p>
+            <p>Com a expansão do 5G e da Internet das Coisas, bilhões de sensores passarão a gerar dados continuamente, e a inferência de modelos de IA na borda (Edge AI) ganha relevância. Os desafios são a gestão de frotas de dispositivos, a segurança de nós distribuídos e a consistência de dados. A nuvem e a borda tendem a atuar de forma complementar, e não concorrente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">04 — Portfólio</p>
+          <h2>Galeria de projetos</h2>
+          <p class="lead-muted">Projetos de TI desenvolvidos ao longo do curso Técnico em Informática. Passe o cursor para explorar.</p>
+        </header>
+        <div class="row g-4" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">05 — Contato</p>
+          <h2>Vamos conversar?</h2>
+          <p class="lead-muted">Conte sobre sua ideia ou oportunidade. Respondo em até 48 horas úteis.</p>
+        </header>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-5 reveal">
+            <div class="card-glass h-100">
+              <h3 class="h5">Informações</h3>
+              <ul class="meta-list mt-3">
+                <li><span data-icon="mail"></span> <a href="mailto:brennoeduardomodestosilva@gmail.com">brennoeduardomodestosilva@gmail.com</a></li>
+                <li><span data-icon="phone"></span> <a href="tel:+5511961013689">+55 11 96101-3689</a></li>
+                <li><span data-icon="pin"></span> São Paulo, SP</li>
+                <li><span data-icon="home"></span> Av. Miguel Yunes, 1030</li>
+              </ul>
+              <p class="small text-muted-2 mt-4 mb-0">Sua mensagem é guardada neste navegador e também enviada por e-mail (brennoeduardomodestosilva@gmail.com) por meio do Formspree.</p>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal" style="--d:.1s">
+            <form id="contactForm" class="card-glass" novalidate aria-describedby="formStatus">
+              <div class="row g-3">
+                <div class="col-md-6 field">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nome" name="nome" autocomplete="name" required minlength="3" maxlength="80" placeholder="Seu nome completo">
+                  <div class="invalid-feedback">Informe seu nome (mín. 3 caracteres).</div>
+                </div>
+                <div class="col-md-6 field">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email" name="email" autocomplete="email" required maxlength="120" placeholder="voce@empresa.com">
+                  <div class="invalid-feedback">Informe um e-mail válido.</div>
+                </div>
+                <div class="col-12 field">
+                  <label for="assunto" class="form-label">Assunto</label>
+                  <input type="text" class="form-control" id="assunto" name="assunto" required minlength="3" maxlength="100" placeholder="Sobre o que quer falar?">
+                  <div class="invalid-feedback">Informe o assunto (mín. 3 caracteres).</div>
+                </div>
+                <div class="col-12 field">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required minlength="10" maxlength="1000" placeholder="Escreva sua mensagem..."></textarea>
+                  <div class="invalid-feedback">A mensagem precisa ter ao menos 10 caracteres.</div>
+                </div>
+                <div class="col-12 d-flex flex-wrap align-items-center gap-3">
+                  <button type="submit" class="btn btn-glow btn-lg" id="btnEnviar"><span class="btn-label">Enviar mensagem</span> <span data-icon="send"></span></button>
+                  <p id="formStatus" class="form-status mb-0" role="status" aria-live="polite"></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-md-6">
+          <a class="brand" href="#inicio"><span class="brand-mark">BM</span><span class="brand-text">Brenno Eduardo Modesto Silva</span></a>
+          <p class="small text-muted-2 mt-3 mb-0"><a href="mailto:brennoeduardomodestosilva@gmail.com">brennoeduardomodestosilva@gmail.com</a><br>Portfólio desenvolvido do zero com HTML5, CSS3, JavaScript e Bootstrap 5.</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="social justify-content-md-end" aria-label="Redes sociais">
+            <li><a href="https://github.com/BrennoModesto" target="_blank" rel="noopener noreferrer" aria-label="GitHub (abre em nova aba)"><span data-icon="github"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/brenno-modesto-6a8419379/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (abre em nova aba)"><span data-icon="linkedin"></span></a></li>
+                        <li><a href="mailto:brennoeduardomodestosilva@gmail.com" aria-label="Enviar e-mail"><span data-icon="mail"></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-line">
+      <p class="small text-muted-2 text-center mb-0">© <span id="ano"></span> Brenno Eduardo Modesto Silva · Senac Nações Unidas — Atividade Final do 4º Bimestre</p>
+    </div>
+  </footer>
+
+  <!-- TOASTS -->
+  <div class="toast-stack" id="toastStack" aria-live="polite" aria-atomic="false"></div>
+
+  <!-- PAINEL ADMIN OCULTO (Ctrl + Shift + A) -->
+  <div class="admin-overlay" id="adminOverlay" hidden>
+    <div class="admin-panel" role="dialog" aria-modal="true" aria-labelledby="adminTitle" tabindex="-1" id="adminPanel">
+      <div class="admin-head">
+        <div>
+          <h2 id="adminTitle" class="h4 mb-1">Painel administrativo</h2>
+          <p class="mb-0 small text-muted-2">Mensagens salvas no LocalStorage · <span class="count-pill" id="adminCount">0</span> no total</p>
+        </div>
+        <button type="button" class="icon-btn" id="adminClose" aria-label="Fechar painel (Esc)"><span data-icon="close"></span></button>
+      </div>
+      <div class="admin-toolbar">
+        <input type="search" class="form-control form-control-sm" id="adminSearch" placeholder="Filtrar por nome, e-mail ou assunto..." aria-label="Filtrar mensagens">
+        <div class="d-flex gap-2 flex-wrap">
+          <button type="button" class="btn btn-glow btn-sm" id="adminNew"><span data-icon="plus"></span> Nova mensagem</button>
+          <button type="button" class="btn btn-ghost btn-sm" id="adminSeed"><span data-icon="refresh"></span> Restaurar seed</button>
+        </div>
+      </div>
+      <div class="admin-body" id="adminBody"></div>
+    </div>
+  </div>
+
+  <!-- MODAL DE EDIÇÃO / CRIAÇÃO -->
+  <div class="admin-overlay editor" id="editOverlay" hidden>
+    <form class="admin-panel small-panel" id="editForm" role="dialog" aria-modal="true" aria-labelledby="editTitle" novalidate>
+      <h3 id="editTitle" class="h5 mb-3">Editar mensagem</h3>
+      <input type="hidden" id="editId">
+      <div class="row g-3">
+        <div class="col-md-6"><label class="form-label" for="editNome">Nome</label><input class="form-control" id="editNome" required minlength="3" maxlength="80"><div class="invalid-feedback">Mín. 3 caracteres.</div></div>
+        <div class="col-md-6"><label class="form-label" for="editEmail">E-mail</label><input class="form-control" id="editEmail" type="email" required maxlength="120"><div class="invalid-feedback">E-mail inválido.</div></div>
+        <div class="col-12"><label class="form-label" for="editAssunto">Assunto</label><input class="form-control" id="editAssunto" required minlength="3" maxlength="100"><div class="invalid-feedback">Mín. 3 caracteres.</div></div>
+        <div class="col-12"><label class="form-label" for="editMensagem">Mensagem</label><textarea class="form-control" id="editMensagem" rows="4" required minlength="10" maxlength="1000"></textarea><div class="invalid-feedback">Mín. 10 caracteres.</div></div>
+      </div>
+      <div class="d-flex justify-content-end gap-2 mt-4">
+        <button type="button" class="btn btn-ghost btn-sm" id="editCancel">Cancelar</button>
+        <button type="submit" class="btn btn-glow btn-sm">Salvar</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

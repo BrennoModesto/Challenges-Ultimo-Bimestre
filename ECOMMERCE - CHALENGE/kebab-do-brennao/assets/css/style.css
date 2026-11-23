@@ -1,0 +1,94 @@
+/* assets/css/style.css */
+:root {
+    --terracota: #b5472a;
+    --terracota-escuro: #8f3620;
+    --dourado: #d9a441;
+    --ambar: #f3b95f;
+    --marrom: #3e2417;
+    --creme: #fbf3e4;
+    --areia: #f1e2c6;
+}
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--creme);
+    background-image:
+        linear-gradient(30deg, rgba(181,71,42,.05) 12%, transparent 12.5%, transparent 87%, rgba(181,71,42,.05) 87.5%),
+        linear-gradient(150deg, rgba(181,71,42,.05) 12%, transparent 12.5%, transparent 87%, rgba(181,71,42,.05) 87.5%),
+        linear-gradient(30deg, rgba(217,164,65,.07) 12%, transparent 12.5%, transparent 87%, rgba(217,164,65,.07) 87.5%),
+        linear-gradient(150deg, rgba(217,164,65,.07) 12%, transparent 12.5%, transparent 87%, rgba(217,164,65,.07) 87.5%);
+    background-size: 60px 105px;
+    background-position: 0 0, 0 0, 30px 52px, 30px 52px;
+    color: var(--marrom);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h1, h2, h3, h4, h5, h6, .brand { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; }
+.main-content { flex: 1; padding-top: 5.5rem !important; }
+a { color: var(--terracota); }
+a:hover { color: var(--terracota-escuro); }
+
+.navbar-kebab {
+    background: rgba(62, 36, 23, .88);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--dourado);
+}
+.navbar-kebab .navbar-brand, .navbar-kebab .nav-link { color: #fbefd5; }
+.navbar-kebab .navbar-brand { font-size: 1.4rem; color: var(--ambar); }
+.navbar-kebab .nav-link:hover { color: var(--ambar); }
+.navbar-kebab .navbar-toggler { border-color: var(--dourado); }
+.navbar-kebab .navbar-toggler-icon { filter: invert(1); }
+.badge-carrinho { background: var(--dourado); color: var(--marrom); }
+
+.btn-terracota { background: var(--terracota); border-color: var(--terracota); color: #fff; }
+.btn-terracota:hover, .btn-terracota:focus { background: var(--terracota-escuro); border-color: var(--terracota-escuro); color: #fff; }
+.btn-outline-terracota { color: var(--terracota); border-color: var(--terracota); }
+.btn-outline-terracota:hover { background: var(--terracota); color: #fff; }
+.btn-gold { background: var(--dourado); border-color: var(--dourado); color: var(--marrom); font-weight: 600; }
+.btn-gold:hover { background: var(--ambar); border-color: var(--ambar); color: var(--marrom); }
+.btn-outline-gold { color: var(--ambar); border-color: var(--dourado); }
+.btn-outline-gold:hover { background: var(--dourado); color: var(--marrom); }
+
+.hero {
+    background: linear-gradient(135deg, var(--terracota) 0%, #7d2d18 100%);
+    color: #fff4dc;
+    border-radius: 1.25rem;
+    padding: 2.5rem 1rem;
+    border-bottom: 5px solid var(--dourado);
+    box-shadow: 0 .5rem 1.5rem rgba(62, 36, 23, .2);
+}
+.hero h1 { font-size: clamp(1.6rem, 4vw, 2.6rem); }
+
+.card-produto, .card-form, .card-stat {
+    border: 1px solid var(--areia);
+    border-radius: 1rem;
+    background: #fffdf8;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+.card-produto:hover { transform: translateY(-6px); box-shadow: 0 .8rem 1.6rem rgba(62, 36, 23, .18); }
+.card-img-wrap { position: relative; display: block; overflow: hidden; border-radius: 1rem 1rem 0 0; }
+.card-img-wrap img { height: 200px; object-fit: cover; transition: transform .35s ease; }
+.card-produto:hover .card-img-wrap img { transform: scale(1.05); }
+.img-placeholder {
+    height: 200px; display: flex; align-items: center; justify-content: center;
+    font-size: 4rem; background: linear-gradient(135deg, var(--areia), var(--ambar));
+}
+.img-placeholder-lg { height: 360px; font-size: 8rem; }
+.badge-estoque { position: absolute; top: .75rem; right: .75rem; font-size: .8rem; }
+.badge-categoria { background: var(--areia); color: var(--terracota-escuro); border: 1px solid var(--dourado); }
+.preco { color: var(--terracota); font-weight: 700; font-family: 'Playfair Display', serif; }
+
+.tabela-kebab thead { background: var(--marrom); color: #fbefd5; }
+.tabela-kebab thead th { border: 0; }
+
+.flash-msg { border-left: 5px solid; border-radius: .6rem; box-shadow: 0 .25rem .75rem rgba(0,0,0,.08); }
+.form-control:focus, .form-select:focus, .form-check-input:focus {
+    border-color: var(--dourado); box-shadow: 0 0 0 .2rem rgba(217, 164, 65, .3);
+}
+.form-check-input:checked { background-color: var(--terracota); border-color: var(--terracota); }
+
+.footer-kebab { background: var(--marrom); color: #e9d8b8; border-top: 4px solid var(--dourado); }
+.footer-kebab a { color: var(--ambar); text-decoration: none; }
+.footer-kebab a:hover { text-decoration: underline; }
+.footer-kebab .brand { color: var(--ambar); }
